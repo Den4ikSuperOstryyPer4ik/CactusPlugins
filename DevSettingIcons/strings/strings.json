@@ -1,0 +1,17 @@
+{
+    "icons": "Icons (R.drawable)",
+    "animations": "Animations (R.raw)",
+    "filters": "Filters",
+    "search": "Search",
+    "type": "Type of drawable icons",
+    "all": "All",
+    "show_as_grid": "Show as grid",
+    "show_as_list": "Show as list",
+    "loading": "Loading...",
+    "icon_size": "Icon size",
+    "animation_size": "Animation size",
+    "min": "MIN",
+    "max": "MAX",
+    "pause": "Pause",
+    "play": "Play"
+}

@@ -1,0 +1,4 @@
+{
+    "metainfo": "metainfo.json",
+    "main": "src/main.py"
+}

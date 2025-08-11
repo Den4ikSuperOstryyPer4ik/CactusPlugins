@@ -1,0 +1,32 @@
+{
+    "list": [
+        "animationpin", "album_shadow", "attach_shadow", "bar_selector_lock", "bar_selector_style",
+        "bar_selector_white", "blockpanel_shadow", "book_bot", "book_channel", "book_group", "book_user",
+        "boxshadow", "buy_with_googlepay_button_content", "call_notification_bg", "call_notification_line",
+        "call_notification_line_rtl", "calls_pip_outershadow", "camera_btn", "cancel_big", "camerax_icon",
+        "chats_archive_box", "chats_archive_arrow", "chats_archive_muted", "chats_archive_pin",
+        "chats_widge_preview", "circle_big", "clone", "compose_panel_shadow", "contacts_widget_preview",
+        "equals", "etg_splash", "ev_minus", "ev_plus", "fast_scroll_shadow", "fast_scroll_empty",
+        "filled_chatlink_large", "finalize", "floating_shadow", "floating_shadow_profile",
+        "googlepay_button_no_shadow_background", "googlepay_button_no_shadow_background_image",
+        "googlepay_button_overlay", "greydivider", "greydivider_bottom", "greydivider_top", "groups_limit1",
+        "groupsintro", "groupsintro2", "header_shadow", "header_shadow_reverse", "ic_ab_new", "ic_ab_reply_2",
+        "ic_chatlist_add_2", "ic_foreground", "ic_foreground_monet",
+        "ic_monochrome", "ic_monochrome_beta", "ic_monochrome_cyberpunk", "ic_monochrome_google", "ic_monochrome_orbit",
+        "ic_monochrome_space", "ic_player", "ic_reply_icon", "icon_background_clip", "icon_background_clip_round",
+        "icon_plane", "icplaceholder", "intro_etg_arrow", "intro_fast_arrow", "intro_fast_arrow_shadow", "intro_fast_body",
+        "intro_fast_spiral", "intro_powerful_infinity", "intro_powerful_infinity_white", "intro_powerful_mask",
+        "intro_private_door", "intro_tg_plane", "large_ads_info", "large_away", "large_greeting", "large_log_actions",
+        "large_monetize", "large_quickreplies", "layer_shadow", "list_selector_ex", "livepin", "load_big", "location_empty",
+        "lock_round_shadow", "login_arrow1", "login_phone1", "logo_middle", "map_pin3", "map_pin_photo", "menu_shadow",
+        "msg_media_gallery", "music_empty", "no_passport", "no_password", "nocover", "nocover_big", "nophotos", "notify",
+        "pagedown_shadow", "paint_elliptical_brush", "paint_neon_brush", "paint_radial_brush", "phone_activate",
+        "photo_placeholder_in", "photo_tooltip2", "photos_header_shadow", "photoview_placeholder", "popup_fixed_alert",
+        "popup_fixed_alert2", "popup_fixed_alert3", "reactions_bubble_shadow", "screencast_big", "screencast_big_remix",
+        "screencast_solar", "scrollbar_vertical_thumb", "scrollbar_vertical_thumb_inset", "shadowdown", "shadow_story_top",
+        "smiles_info", "sms_bubble", "sms_devices", "sticker", "story_camera", "theme_preview_image", "ton",
+        "transparent", "venue_tooltip", "wait", "widget_avatar_1", "widget_avatar_2", "widget_avatar_3", "widget_avatar_4",
+        "widget_avatar_5", "widget_avatar_6", "widget_avatar_7", "widget_background", "widget_badge_background",
+        "widget_badge_muted_background"
+    ]
+}
