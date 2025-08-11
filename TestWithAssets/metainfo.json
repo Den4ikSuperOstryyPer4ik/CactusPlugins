@@ -1,0 +1,8 @@
+{
+    "name": "TestWithAssets",
+    "description": "[Elyx:Test] Plugin with assets with usage example",
+    "id": "testwithassets",
+    "version": "0.1.0",
+    "author": "@CactusPlugins",
+    "min_version": "11.13.0"
+}
