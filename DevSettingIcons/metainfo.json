@@ -1,9 +1,9 @@
 {
     "name": "DevSettingIcons",
-    "description": "[For Devs] All icons/animations for plugin settings/bulletins and more with filters!",
+    "description": "[For Devs] All icons/animations/colors for plugin settings/bulletins and more with filters!",
     "icon": "assets/icon.png",
     "id": "devsettingicons",
-    "version": "1.4.0",
+    "version": "1.4.2",
     "author": "@CactusPlugins",
     "min_version": "11.13.0"
 }

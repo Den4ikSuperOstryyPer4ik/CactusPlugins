@@ -18,9 +18,15 @@
 ||        PLEASE DO NOT COPY THIS CODE WITHOUT NOTIFYING ME.        ||
 >>==================================================================<<
 """
+import traceback
+
+from android_utils import run_on_ui_thread
 from base_plugin import BasePlugin
-from elyx import strings
-from org.telegram.messenger import R
+from dalvik.system import InMemoryDexClassLoader
+from elyx import assets, strings
+from java import jint
+from java.nio import ByteBuffer
+from org.telegram.messenger import ApplicationLoader, R
 from ui.settings import Divider, Header, Input, Selector, Text
 
 from ..assets import drawables_blacklist, raw_types
@@ -32,6 +38,7 @@ class DevSettingIcons(BasePlugin):
         super().__init__()
         self.icons = {}
         self.animations = {}
+        self.color_sheet_class = None
 
     def on_plugin_load(self) -> None:
         self.icons = {
@@ -43,6 +50,7 @@ class DevSettingIcons(BasePlugin):
             anim_id: getattr(R.raw, anim_id)
             for anim_id in raw_types["json"]
         }
+        self.color_sheet_class = InMemoryDexClassLoader(ByteBuffer.wrap(assets.classes.content_bytes()), ApplicationLoader.applicationContext.getClassLoader()).loadClass("org.den4iksop.devsettingicons.ColorsBottomSheet")
  
     def create_settings(self):
         return [
@@ -82,4 +90,34 @@ class DevSettingIcons(BasePlugin):
                 on_click=lambda _: AnimationSheet(self, 1).show(),
                 icon="msg_reorder"
             ),
+            Divider(),
+            Header(text=strings["colors"]),
+            Input(key="color_filter", text=strings["search"], icon="msg_search", default=""),
+            Text(
+                text=strings["show_as_grid"],
+                accent=True,
+                on_click=lambda _: run_on_ui_thread(lambda: self.show_color_sheet(0)),
+                icon="input_bot2_solar"
+            ),
+            Text(
+                text=strings["show_as_list"],
+                accent=True,
+                on_click=lambda _: run_on_ui_thread(lambda: self.show_color_sheet(1)),
+                icon="msg_reorder"
+            ),
         ]
+    
+    def show_color_sheet(self, _type):
+        try:
+            _filter = self.get_setting("color_filter", "")
+
+            self.color_sheet_class.getConstructors()[0].newInstance(
+                jint(_type),
+                _filter,
+                strings["colors"] + (f" • {_filter}" if _filter else ""),
+                strings["loading"],
+                strings["min"],
+                strings["max"]
+            )
+        except:
+            self.log(traceback.format_exc())
